@@ -316,21 +316,14 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1.2s ease-in-out;
+    transition: opacity 2s ease-in-out;
     object-fit: cover;
 }
 
 .carousel-slide.active {
     opacity: 1;
-    z-index: 2;
 }
 
-.carousel-slide.fade-out {
-    opacity: 0;
-    z-index: 1;
-}
-
-/* Remove the default styling for first slide to let JavaScript handle it */
 .carousel-indicators {
     position: absolute;
     bottom: -20px;
