@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle360 - Connect, Share, Grow</title>
+    <link rel="icon" type="image/png" href="screenshots/app_icon.png">
+    <link rel="apple-touch-icon" href="screenshots/app_icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="background-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+        <div class="floating-circle circle-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="screenshots/app_icon.png" alt="Circle360" class="logo-icon">
+                <span>Circle360</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#membership">Plans</a></li>
+                <li><a href="#lessons">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 1M+ Families</span>
+                </div>
+                <h1>Stay Connected with Your Circle</h1>
+                <p class="hero-subtitle">Keep your family safe and connected with real-time location sharing, driving analytics, and comprehensive circle management. Circle360 brings families closer together with advanced safety features.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fab fa-apple"></i>
+                        Download Free
+                    </a>
+                    <a href="#membership" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Real-time Location</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-bell"></i>
+                        <span>Smart Notifications</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-car"></i>
+                        <span>Driving Analytics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <img src="screenshots/front_2.png?v=1" alt="Circle360 App Screenshot" class="app-screenshot">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element element-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="floating-element element-2">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="floating-element element-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Families Choose Circle360</h2>
+                <p class="section-subtitle">Advanced safety technology that keeps your family connected and protected</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Real-time Location</h3>
+                    <p>Track family members in real-time with live location sharing, route visualization, and arrival/departure alerts for peace of mind.</p>
+                    <div class="feature-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Live tracking with route maps</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Driving Analytics</h3>
+                    <p>Monitor driving behavior with detailed metrics including speeding, hard braking, rapid acceleration, and phone usage tracking.</p>
+                    <div class="feature-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Comprehensive driving reports</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Intelligent alert system with battery notifications, arrival/departure alerts, and customizable notification preferences for your family.</p>
+                    <div class="feature-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Customizable alerts</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy Protection</h3>
+                    <p>Your family's data stays secure with advanced encryption and privacy controls that put you in charge of your information.</p>
+                    <div class="feature-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Advanced encryption</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Safety Plan</h2>
+                <p class="section-subtitle">Find the perfect plan to keep your family safe and connected</p>
+            </div>
+            
+            <div class="membership-grid">
+                <!-- Free Plan -->
+                <div class="membership-card">
+                    <div class="plan-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Basic location tracking</li>
+                        <li><i class="fas fa-check"></i> Circle membership</li>
+                        <li><i class="fas fa-check"></i> Basic driving metrics (speeding)</li>
+                        <li><i class="fas fa-check"></i> Privacy protection</li>
+                        <li><i class="fas fa-check"></i> Smart notifications</li>
+                        <li><i class="fas fa-check"></i> Battery alerts</li>
+                        <li><i class="fas fa-check"></i> 1 location for alerts</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Get Started Free</a>
+                </div>
+
+                <!-- Gold Plan -->
+                <div class="membership-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Circle Gold</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">10.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Free</li>
+                        <li><i class="fas fa-check"></i> Live track with route visualization</li>
+                        <li><i class="fas fa-check"></i> Up to 2 locations with alerts</li>
+                        <li><i class="fas fa-check"></i> All driving metrics</li>
+                        <li><i class="fas fa-check"></i> Enhanced driving analytics</li>
+                        <li><i class="fas fa-check"></i> Screen time tracking</li>
+                        <li><i class="fas fa-check"></i> Advanced notifications</li>
+                        <li><i class="fas fa-check"></i> Enhanced privacy controls</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Start Gold Trial</a>
+                </div>
+
+                <!-- Platinum Plan -->
+                <div class="membership-card">
+                    <div class="plan-header">
+                        <h3>Circle Platinum</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">14.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Everything in Gold</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics & trends</li>
+                        <li><i class="fas fa-check"></i> Up to 5 locations</li>
+                        <li><i class="fas fa-check"></i> Detailed driving reports</li>
+                        <li><i class="fas fa-check"></i> Crash detection</li>
+                        <li><i class="fas fa-check"></i> Circle creation & management</li>
+                        <li><i class="fas fa-check"></i> Emergency response</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Go Platinum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Features Section -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Advanced Safety Features</h2>
+                <p class="section-subtitle">Comprehensive protection for your family's safety and peace of mind</p>
+            </div>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Location Tracking</h3>
+                    <p>Real-time location sharing with route visualization, arrival/departure alerts, and up to 5 custom locations for comprehensive family monitoring.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-clock"></i> Real-time</span>
+                        <span><i class="fas fa-star"></i> Route Maps</span>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Driving Metrics</h3>
+                    <p>Comprehensive driving analytics including speeding detection, hard braking, rapid acceleration, and phone usage tracking for safer driving habits.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-chart-line"></i> Detailed Reports</span>
+                        <span><i class="fas fa-star"></i> Real-time Data</span>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3>Crash Detection</h3>
+                    <p>Automatic crash detection with immediate emergency response and family notification when accidents occur for maximum safety.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-shield-alt"></i> 24/7 Monitoring</span>
+                        <span><i class="fas fa-star"></i> Instant Alerts</span>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Circle Management</h3>
+                    <p>Create and manage family circles, invite members, and maintain comprehensive control over your family's safety network.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-cog"></i> Easy Setup</span>
+                        <span><i class="fas fa-star"></i> Full Control</span>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Intelligent alert system with battery notifications, arrival/departure alerts, and customizable notification preferences for your family.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-cog"></i> Customizable</span>
+                        <span><i class="fas fa-star"></i> Smart Alerts</span>
+                    </div>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Comprehensive analytics and trend analysis with detailed driving reports and performance insights to improve family safety over time.</p>
+                    <div class="lesson-meta">
+                        <span><i class="fas fa-chart-line"></i> Trend Analysis</span>
+                        <span><i class="fas fa-star"></i> Performance Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Families Are Saying</h2>
+                <p class="section-subtitle">Real stories from families who trust Circle360</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Circle360 has given us peace of mind knowing our teenagers are safe. The driving analytics helped improve their driving habits significantly."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Mother of 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The real-time location sharing is incredible. I always know where my family is, and the smart notifications keep me updated without being intrusive."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>Father of 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The crash detection feature is amazing. It automatically detected when my son had a minor accident and immediately notified us. Circle360 truly cares about family safety."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Lisa Rodriguez</h4>
+                                <span>Mother of 1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section id="download" class="download-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Keep Your Family Safe?</h2>
+                    <p>Join over 1 million families who trust Circle360 to protect their loved ones. Download the app today and start your free trial.</p>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <i class="fas fa-download"></i>
+                            <span>Free to download</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy protected</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Setup in minutes</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary btn-large">
+                            <i class="fab fa-apple"></i>
+                            Download on App Store
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <div class="app-preview">
+                        <img src="screenshots/notifications.png" alt="Circle360 App" class="app-screenshot">
+                        <div class="download-badge">
+                            <i class="fas fa-download"></i>
+                            <span>Download Now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Protecting Families Since 2024</h2>
+                    <p>Circle360 was created with a simple mission: to keep families safe and connected. We believe that every family deserves peace of mind knowing their loved ones are protected, no matter where they are.</p>
+                    <p>Our advanced safety technology provides real-time location sharing, emergency response, and comprehensive protection features that give families the confidence to live their lives while staying connected.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1M+</h3>
+                            <p>Families Protected</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Emergency Responses</p>
+                        </div>
+                        <div class="stat">
+                            <h3>99.9%</h3>
+                            <p>Uptime Reliability</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="community-illustration">
+                        <div class="circle-group">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="screenshots/app_icon.png" alt="Circle360" class="logo-icon">
+                        <span>Circle360</span>
+                    </div>
+                    <p>Connecting people through shared passions and meaningful experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#membership">Safety Plans</a></li>
+                        <li><a href="#lessons">Safety Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                        <li><a href="gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Circle360. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
