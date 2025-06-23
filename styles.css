@@ -299,6 +299,66 @@ body {
     transform: perspective(1000px) rotateY(-10deg) rotateX(2deg);
 }
 
+.carousel-container {
+    position: relative;
+    width: 280px;
+    height: 568px; /* Fixed height based on typical phone screenshot ratio */
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    object-fit: cover;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel-slide.fade-out {
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Remove the default styling for first slide to let JavaScript handle it */
+.carousel-indicators {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #3b82f6;
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
 .app-screenshot {
     width: 280px;
     height: auto;

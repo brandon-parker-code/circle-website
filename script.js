@@ -5,6 +5,110 @@ function trackEvent(eventName, parameters = {}) {
     }
 }
 
+// Carousel functionality
+let currentSlide = 1;
+const totalSlides = 2;
+let carouselInterval;
+let isTransitioning = false;
+
+function initCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    
+    console.log('Carousel initialized with', slides.length, 'slides');
+    console.log('First slide src:', slides[0].src);
+    console.log('Second slide src:', slides[1].src);
+    
+    function showSlide(slideNumber) {
+        console.log('Attempting to show slide:', slideNumber);
+        if (isTransitioning) {
+            console.log('Transition in progress, skipping');
+            return; // Prevent multiple transitions
+        }
+        isTransitioning = true;
+        
+        // Remove active class from all slides and indicators
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+        
+        indicators.forEach(indicator => {
+            indicator.classList.remove('active');
+        });
+        
+        // Show new slide and activate indicator
+        const newSlideElement = document.querySelector(`[data-slide="${slideNumber}"]`);
+        const newIndicator = document.querySelector(`.indicator[data-slide="${slideNumber}"]`);
+        
+        if (newSlideElement) {
+            newSlideElement.classList.add('active');
+            console.log('Activated slide:', newSlideElement.src);
+            console.log('Slide number:', slideNumber);
+            console.log('Expected image:', slideNumber === 1 ? 'front_2.png' : 'front_4.png');
+        }
+        
+        if (newIndicator) {
+            newIndicator.classList.add('active');
+        }
+        
+        // Complete transition after fade
+        setTimeout(() => {
+            isTransitioning = false;
+            console.log('Transition completed');
+        }, 1200); // Match CSS transition duration
+        
+        // Track carousel slide change
+        trackEvent('carousel_slide_change', {
+            slide_number: slideNumber,
+            slide_image: slideNumber === 1 ? 'front_2.png' : 'front_4.png'
+        });
+    }
+    
+    function nextSlide() {
+        currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+        console.log('Next slide triggered:', currentSlide);
+        showSlide(currentSlide);
+    }
+    
+    // Set up automatic carousel (20 seconds)
+    carouselInterval = setInterval(nextSlide, 20000);
+    console.log('Carousel interval set for 20 seconds');
+    
+    // Set up indicator clicks
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', () => {
+            const slideNumber = parseInt(indicator.getAttribute('data-slide'));
+            console.log('Indicator clicked for slide:', slideNumber);
+            if (slideNumber === currentSlide) {
+                console.log('Same slide clicked, ignoring');
+                return; // Don't transition to same slide
+            }
+            
+            currentSlide = slideNumber;
+            showSlide(slideNumber);
+            
+            // Reset the interval
+            clearInterval(carouselInterval);
+            carouselInterval = setInterval(nextSlide, 20000);
+            
+            // Track manual carousel navigation
+            trackEvent('carousel_manual_navigation', {
+                slide_number: slideNumber,
+                slide_image: slideNumber === 1 ? 'front_2.png' : 'front_4.png'
+            });
+        });
+    });
+    
+    // Initialize with first slide
+    console.log('Initializing with slide 1');
+    showSlide(1);
+}
+
+// Initialize carousel when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initCarousel();
+});
+
 // Track page views
 document.addEventListener('DOMContentLoaded', () => {
     trackEvent('page_view', {
