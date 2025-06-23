@@ -7,7 +7,7 @@ function trackEvent(eventName, parameters = {}) {
 
 // Carousel functionality
 let currentSlide = 1;
-const totalSlides = 2;
+const totalSlides = 3;
 let carouselInterval;
 
 function initCarousel() {
@@ -44,9 +44,13 @@ function initCarousel() {
         }
         
         // Track carousel slide change
+        let slideImage = 'front_3.png';
+        if (slideNumber === 2) slideImage = 'front_4.png';
+        if (slideNumber === 3) slideImage = 'notifications_1.png';
+        
         trackEvent('carousel_slide_change', {
             slide_number: slideNumber,
-            slide_image: slideNumber === 1 ? 'front_2.png' : 'front_4.png'
+            slide_image: slideImage
         });
     }
     
@@ -56,9 +60,9 @@ function initCarousel() {
         showSlide(currentSlide);
     }
     
-    // Set up automatic carousel (20 seconds)
-    carouselInterval = setInterval(nextSlide, 20000);
-    console.log('Carousel interval set for 20 seconds');
+    // Set up automatic carousel (15 seconds)
+    carouselInterval = setInterval(nextSlide, 15000);
+    console.log('Carousel interval set for 15 seconds');
     
     // Initialize with first slide
     showSlide(1);
